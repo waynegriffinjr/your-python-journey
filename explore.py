@@ -123,6 +123,8 @@ st.subheader("6. Progress Summary")
 
 show_summary = st.checkbox("Show my personalized learning summary", value=False)
 
-st.success(
+if show_summary:
+    st.success(
     f"Well done! You have been coding for {weeks} weeks. You are committed to learning more about {topic}. You have a solid understanding of your pereferred '{style}' learning style, and you now know there are great resources you can explore ({resources[style]}). The next step can be to utilize your toolkit ({selected_tools}) to begin working on one of the generated project ideas based on your interest in {project_keyword}. Wishing you much success!"
 )
+else: st.info("Check your learning summary checkbox.")
