@@ -1,29 +1,3 @@
-"""
-L7 — Streamlit Exploration App  (STARTER)
-===========================================
-Run with:
-    streamlit run solution.py
-
-Your goal: build an interactive app called "Python Learning Journey" that
-uses 5+ widget types and shows content that changes based on widget values.
-
-KEY CONCEPT — The re-run model:
-    Every time a user interacts with a widget, Streamlit re-executes the
-    ENTIRE script from top to bottom. This means:
-      • Widget functions (st.slider, st.selectbox, etc.) both RENDER the
-        widget AND RETURN the current value in the same call.
-      • Just use the returned value immediately — no event handlers needed.
-      • Write code like a normal top-to-bottom Python script.
-
-Widgets to use (at least 5):
-    st.slider()       — returns a number (int or float)
-    st.selectbox()    — returns one item from a list
-    st.radio()        — returns one item from a list (shown as radio buttons)
-    st.multiselect()  — returns a list of selected items
-    st.text_input()   — returns a string
-    st.checkbox()     — returns True or False
-"""
-
 import streamlit as st
 
 # ── Page configuration ─────────────────────────────────────────────────────
